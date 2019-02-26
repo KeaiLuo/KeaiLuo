@@ -13,5 +13,5 @@ zuul:
     #二
     #product: /MyProduct/**
   #三,可以写正则
-  ignored-patterns:
+#   ignored-patterns:
 #     - /**/product/**
