@@ -1,17 +1,17 @@
-zuul:
-  sensitive-headers: 
-  host:
-    connect-timeout-millis: 10000
-    socket-timeout-millis: 60000
-  routes:
-    #方法三种
-    MyProduct:
-      sensitiveHeaders:
-        #设置敏感头,也就是允许cookie
-      path: /MyProduct/**
-      serviceId: PRODUCT
-    #二
-    #product: /MyProduct/**
-  #三,可以写正则
-  ignored-patterns:
-    - /**/product/listfororder
+# zuul:
+#   sensitive-headers: 
+#   host:
+#     connect-timeout-millis: 10000
+#     socket-timeout-millis: 60000
+#   routes:
+#     #方法三种
+#     MyProduct:
+#       sensitiveHeaders:
+#         #设置敏感头,也就是允许cookie
+#       path: /MyProduct/**
+#       serviceId: PRODUCT
+#     #二
+#     #product: /MyProduct/**
+#   #三,可以写正则
+#   ignored-patterns:
+#     - /**/product/listfororder
